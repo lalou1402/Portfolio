@@ -1,0 +1,472 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-attachment: fixed;
+    /* background-image: url("image/fonde.png"); */
+    background-color: #f4effc;
+    background-size: cover;
+}
+
+header {
+    width: 100%;
+    background-color: #f4effc;
+    border-bottom: 1px solid #f4effc;
+}
+.page {
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 10%;
+    margin-bottom: 6%;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f4effc;
+    border-bottom: 1px solid #f4effc;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /*Faire passer un premier plan*/
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #632476;
+    display: block;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    text-decoration-color: #632476;
+}
+.logo {
+    display: flex;
+    margin-left: 95%;
+    position: fixed;
+    align-items: center;
+}
+
+.logo a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+.logo img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Texte de la page  */
+.propos,
+.formation,
+.date,
+.feuille,
+.devant,
+.derriere,
+li,
+p,
+small {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #632476;
+    text-align: justify;
+}
+
+.propos,
+.formation,
+.date,
+.feuille,
+.devant,
+.derriere,
+li,
+p {
+    font-size: 18px;
+}
+.description {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: #632476;
+    text-align: center;
+    padding: 10%;
+}
+
+h1,
+h2 {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: #632476;
+    scroll-margin-top: 65px;
+}
+
+.titre {
+    margin-top: 10%;
+}
+.titres {
+    margin-top: 10%;
+}
+.propos {
+    margin-right: 25%;
+    margin-bottom: 10%;
+}
+.formation {
+    margin-left: 2%;
+    margin-bottom: 3%;
+}
+.hat,
+.user {
+    height: 22px;
+    width: 22px;
+    margin-left: 3px;
+}
+.livre {
+    height: 22px;
+    width: 22px;
+    margin-left: 12px;
+}
+.date {
+    margin-left: 2%;
+}
+.moi {
+    float: right;
+    height: 250px;
+    margin-top: 6%;
+    margin-right: 6%;
+    border-radius: 150px;
+    border: 2px solid #632476;
+}
+.jean {
+    background-color: #d0c6e9;
+    border: solid, 1.5px;
+    border-color: #d0c6e9;
+    border-radius: 30px;
+    padding: 0.5em;
+}
+
+.prof {
+    height: 250px;
+    border-radius: 30px;
+    float: left;
+    margin-right: 3%;
+}
+
+.ble {
+    height: 250px;
+    border-radius: 30px;
+    float: right;
+    margin-left: 3%;
+}
+
+progress {
+    width: 80%;
+    height: 15px;
+    margin-right: 10px;
+    appearance: none; /* Supprime le style par défaut */
+}
+
+progress::-webkit-progress-bar {
+    background-color: #f0f0f0; /* Couleur de fond de la jauge */
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #d0c6e9; /* Couleur de la barre de progression*/
+    border-radius: 10px;
+}
+.divi {
+    background-color: #d0c6e9;
+    border: solid, 1.5px;
+    border-color: #d0c6e9;
+    border-radius: 30px;
+    padding: 1.5em;
+    margin-bottom: 3%;
+}
+.esp {
+    padding: 3em;
+}
+.feuille {
+    margin-bottom: 5%;
+    margin-top: 3%;
+}
+
+.esp {
+    padding: 3em;
+}
+
+.crea {
+    height: 100px;
+    width: 100px;
+}
+
+.qualite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6%;
+}
+.competence {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-bottom: 0;
+}
+
+.division {
+    background-color: #d0c6e9;
+    border: 1.5px solid #d0c6e9;
+    border-radius: 50px;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3em;
+}
+.technique {
+    background-color: #eafdf0;
+    border: 1.5px solid #eafdf0;
+    border-radius: 30px;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3em;
+}
+
+.case {
+    display: none;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.devant,
+.derriere {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.devant {
+    padding: 20px;
+}
+.devant p {
+    font-size: 24px;
+    margin-top: 2px;
+}
+
+.derriere {
+    display: none;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+.derriere h5 {
+    margin-top: 0;
+}
+.case:checked + .box .devant {
+    display: none;
+}
+
+.case:checked + .box .derriere {
+    display: flex;
+}
+
+.icon {
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.icon,
+.icons,
+.livre,
+.hat,
+.divers {
+    filter: invert(21%) sepia(63%) saturate(1500%) hue-rotate(258deg) brightness(75%) contrast(94%);
+}
+.icons {
+    height: 18px;
+    margin-right: 3%;
+    vertical-align: middle;
+}
+
+.pat {
+    margin-top: 15%;
+}
+.sectionComp {
+    width: 18%; /* Adjust the width as needed */
+    margin: 10px;
+    text-align: center;
+}
+
+.reseau-checkbox {
+    display: none;
+}
+
+.reseau-label {
+    padding: 15px;
+    background-color: #d0c6e9;
+    border: 1px solid #d0c6e9;
+    color: black;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 8px;
+    display: block;
+    color: #632476;
+}
+
+.reseau-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    padding: 0 15px;
+    background-color: #ffffff;
+    border: 1px solid #d0c6e9;
+    border-radius: 8px;
+    margin-top: 10px;
+    color: #632476;
+}
+
+.reseau-checkbox:checked + .reseau-label + .reseau-content {
+    max-height: 600px; /* Adjust according to your content's height */
+    padding: 15px;
+}
+footer {
+    justify-content: center;
+    display: flex;
+}
+
+.portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%;
+}
+
+.choix {
+    background-color: #d0c6e9;
+    border: 1.5px solid #d0c6e9;
+    border-radius: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    flex-direction: column;
+}
+.nom {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    color: #632476;
+    text-align: justify;
+}
+.image {
+    border-radius: 30px;
+    width: 350px;
+    height: 250px;
+    border: 1.5px solid #632476;
+}
+
+.contact {
+    margin-left: 6%;
+}
+.mail {
+    height: 30px;
+    float: left;
+}
+.add {
+    padding-top: 8px;
+    text-decoration: none;
+}
+.tele {
+    padding-top: 6px;
+}
+.linkedin {
+    display: flex;
+    align-items: center;
+}
+
+.link {
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+embed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+    width: 700px;
+    border-radius: 20px;
+}
+
+.divers {
+    height: 18px;
+    margin-right: 8px;
+}
+.sujet {
+    align-items: center;
+    font-size: 22px;
+    text-decoration: underline;
+    float: left;
+}
+.photo {
+    height: 200px;
+    border-radius: 30px;
+    float: right;
+}
+.classe {
+    background-color: #d0c6e9;
+    border: solid, 1.5px;
+    border-color: #d0c6e9;
+    border-radius: 30px;
+    padding: 30px 30px;
+}
+
+.oui {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #632476;
+    text-align: justify;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    font-size: 18px;
+    margin-right: 28%;
+}
