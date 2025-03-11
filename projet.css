@@ -1,8 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=PT+Sans&family=Roboto:wght@100&display=swap");
+
+:root {
+    --color-primaire: #ffd803;
+    --color-secondaire: #ffffff;
+    --color-terciere: #e3f6f5;
+    --color-autre: #2d334a;
+    --color-texte: #4d536b;
+    --color-backgroud: #fffffe;
+    --color-button: #ffd803;
+    /* Taille texte */
+    --texte: 18px;
+    --titre: 24px;
+    --style: "Inter", sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-attachment: fixed;
-    background-color: #f4effc;
+    background-color: var(--color-terciere);
     background-size: cover;
 }
 .page {
@@ -12,66 +32,26 @@ body {
     margin-bottom: 6%;
 }
 
-h1,
-h2 {
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    color: #632476;
-    text-decoration: underline;
-}
-.titre {
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    color: #632476;
-    text-decoration: none;
-    margin-top: 3%;
-    margin-bottom: 4%;
-}
-.text,
-footer {
-    font-family: "PT Sans", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-    color: #632476;
-    text-align: justify;
-}
 .division {
     margin-top: 5%;
 }
 aside {
     float: right;
 }
-.bouton {
-    background-color: #632476;
-    border: 1px solid #632476;
-    border-radius: 20px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1em;
-    width: 8%;
-    height: 20px;
-    box-shadow: 0 0 10px 0 rgb(173, 173, 173);
-}
+.buttonAccueil,
 .github {
-    background-color: #632476;
-    border: 1px solid #632476;
-    border-radius: 20px;
     position: relative;
+    width: 10%;
+    height: 20px;
+    padding: 1rem 1rem;
+    border-radius: 8px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    background-color: var(--color-button);
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1em;
-    width: 15%;
-    height: 20px;
-    margin-top: 4%;
-    box-shadow: 0 0 10px 0 rgb(173, 173, 173);
+    cursor: pointer;
 }
 .accueil {
     text-decoration: none;
@@ -93,27 +73,72 @@ aside {
     filter: invert(100%) brightness(200%);
 }
 
-.image {
-    height: 250px;
-    float: right;
-    border-radius: 150px;
-    border: 2px solid #632476;
+/* TABLEAU DES NOTES */
+.tableauNote {
+    border-collapse: collapse;
+    margin-left: 16px;
+    margin-top: 32px;
+    border: 2px solid var(--color-primaire);
 }
+.tableauTitre {
+    padding: 8px;
+    background-color: var(--color-primaire);
+    color: var(--color-backgroud);
+    text-align: left;
+}
+.tableauValeur {
+    padding: 8px;
+    text-align: center;
+    background-color: var(--color-backgroud);
+    color: var(--color-texte);
+    border: 2px solid var(--color-primaire);
+}
+/* FIN TABLEAU DES NOTES */
 
-footer {
+.footer {
     justify-content: center;
     display: flex;
 }
-table {
-    border-collapse: collapse;
-    margin-left: 5%;
+p {
+    font-family: var(--style);
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-texte);
+    font-size: var(--texte);
+    flex-wrap: wrap;
+    letter-spacing: 0.75px;
 }
-th,
-td {
-    border: 2px solid #632476;
-    padding: 8px;
-    text-align: center;
+.titre {
+    display: flex;
+    align-items: center; /* Aligne l'icône et le texte verticalement */
+    text-transform: uppercase;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--color-texte);
+    scroll-margin-top: 65px;
+    font-size: var(--titre);
+    margin-top: 16px;
 }
-th {
-    background-color: #d0c6e9;
+
+.sousTitre {
+    display: flex;
+    align-items: center; /* Aligne l'icône et le texte verticalement */
+    text-transform: uppercase;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--color-texte);
+    scroll-margin-top: 65px;
+    font-size: var(--texte);
+    margin-top: 32px;
+    margin-bottom: 8px;
+}
+
+.imgProjet {
+    border-radius: 32px;
+    width: 350px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    float: right;
 }
